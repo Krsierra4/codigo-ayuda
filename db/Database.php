@@ -9,7 +9,7 @@ class Database {
     //Database Properties Connection
     public $hostDB = 'localhost';
     public $userDB = 'root';
-    public $passDB = 'byron123';
+    public $passDB = '-';
     public $nameDB = 'ecommerce';
     protected $connection;
     //Query Properties
