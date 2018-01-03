@@ -7,17 +7,17 @@ ini_set("display_errors",false);
 require "Database.php";
 
 $db1 = new Database();
-$db1->hostDB = "cetadb.cluster-c0jpxvqoqqhh.us-east-1.rds.amazonaws.com";
-$db1->userDB = "cetadmin";
-$db1->passDB = "C3tA$1620";
-$db1->nameDB = "cerebro_prod";
+$db1->hostDB = "";
+$db1->userDB = "";
+$db1->passDB = "";
+$db1->nameDB = "";
 $db1->newConnection();
 
 $db2 = new Database();
-$db2->hostDB = "cetadb.cluster-c0jpxvqoqqhh.us-east-1.rds.amazonaws.com";
-$db2->userDB = "cetadmin";
-$db2->passDB = "C3tA$1620";
-$db2->nameDB = "cerebro_local";
+$db2->hostDB = "";
+$db2->userDB = "";
+$db2->passDB = "";
+$db2->nameDB = "";
 $db2->newConnection();
 
 $roles = $db1->resultsQuery("SELECT * FROM usuario_grupo");
